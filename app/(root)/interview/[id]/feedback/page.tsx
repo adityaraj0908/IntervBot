@@ -65,7 +65,7 @@ const Feedback = async ({ params }: RouteParams) => {
       <div className="flex flex-col gap-4">
         <h2>Breakdown of the Interview:</h2>
         {feedback?.categoryScores?.map((category, index) => (
-          <div key={index}>
+          <div key={index}> 
             <p className="font-bold">
               {index + 1}. {category.name} ({category.score}/100)
             </p>
