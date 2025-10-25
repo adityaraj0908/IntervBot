@@ -91,7 +91,7 @@ const Agent = ({
   const handleCall = async () => {
     setCallStatus(CallStatus.CONNECTING);
 
-    console.log("Workflow ID:", process.env.NEXT_PUBLIC_VAPI_WEB_ID);
+    // console.log("Workflow ID:", process.env.NEXT_PUBLIC_VAPI_WEB_ID);
 
     if (type === "generate") {
       await vapi.start(process.env.NEXT_PUBLIC_VAPI_WEB_ID!, {
